@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Display</title>
+    <style>
+        /* css position: static(default), relative, absolute, fixed, sticky */
+        #container{
+            border: 2px solid red;
+            background-color: rgb(236, 224, 129);
+            height: 3444px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid black;
+            width: 23%;
+            height: 40%;
+            margin: 2px;
+            padding: 6px;
+        }
+        #box1{
+            /* position: relative means change in position relative to its original postion */
+            /* position: absolute means postion wrt to its first parent position */
+            /* position: fixed fixes the position and dont let the content move when we scroll down the window */
+            position: fixed;
+            top: 13px;
+            right: 11px;
+            height: auto;
+        }
+        #box2{
+            position: relative;
+            left: 25%;
+            height: auto;
+        }
+        #box3{
+            position: sticky;
+            height: auto;
+            top: 20px;
+            left: 40%;
+            right:auto;
+        }
+        #box4{
+            height: auto;
+            position: absolute;
+            top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quisquam adipisci rerum nemo aut! Reprehenderit, quaerat nostrum cum iure sequi ipsam et ducimus doloremque sunt ipsa autem dolorem minus fugiat voluptas, facilis eos libero?
+        </div>
+        <div class="box" id="box2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quisquam adipisci rerum nemo aut! Reprehenderit, quaerat nostrum cum iure sequi ipsam et ducimus doloremque sunt ipsa autem dolorem minus fugiat voluptas, facilis eos libero?
+        </div>
+        <div class="box" id="box3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quisquam adipisci rerum nemo aut! Reprehenderit, quaerat nostrum cum iure sequi ipsam et ducimus doloremque sunt ipsa autem dolorem minus fugiat voluptas, facilis eos libero?
+        </div>
+        <div class="box" id="box4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quisquam adipisci rerum nemo aut! Reprehenderit, quaerat nostrum cum iure sequi ipsam et ducimus doloremque sunt ipsa autem dolorem minus fugiat voluptas, facilis eos libero?
+        </div>
+    </div>
+</body>
+</html>

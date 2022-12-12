@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Forms</title>
+    <!-- <link rel="stylesheet" href="first.css"> -->
+    <script src="first.js"></script>
+</head>
+<!-- label is used when you click on the text and you have cursor in the writting area -->
+<body>
+    <h2>HTML Forms</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div><br>
+        <label for="number">Enrollment Number</label>
+        <div>
+            <input type="text" name="myNumber" id="number">
+        </div><br>
+        <label for="email">Email</label>
+        <div>
+            <input type="text" name="myEmail" id="email">
+        </div><br>
+        <label for="date">Date</label>
+        <div>
+            <input type="date" name="myDate" id="date">
+        </div><br>
+        <label for="eligibility">Are you eligible</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="eligibility">
+        </div><br>
+        <div>
+            Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> other<input type="radio" name="myGender">
+        </div><br>
+        <div>
+            About Yourself: <br><textarea name="essay" cols="90" rows="10"></textarea>
+        </div><br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="bmw" selected>BMW</option>
+                <option value="Ferarri">Ferarri</option>
+                <option value="Porsche">Porsche</option>
+            </select>
+        </div><br>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div><br>
+        <div>
+            <input type="reset" value="Reset Now">
+        </div><br>
+    </form>
+    <!-- . is for class # is for id -->
+</body>
+</html>

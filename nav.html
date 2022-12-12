@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+        .navbar{
+            background-color: rgb(147 19 19);
+            height:auto;
+            width: auto;
+            border-radius: 22px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            list-style: none;
+            float: left;
+            margin: 11px 22px;
+            font-size: auto;
+        }
+        .navbar li a{
+            padding: 11px 7px;
+            text-decoration: none;
+            color: rgb(255, 255, 255)
+        }
+        .navbar li a:hover{
+            color: rgb(0,0,0);
+        }
+        .searchbox{
+            color:rgb(255, 255, 255);
+            float: right;
+            padding: 11px 124px;
+        }
+        .navbar input{
+            border: 221px rgb(147 19 19);
+            border-radius: 32px;
+            padding:2px 19px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Support Us</a></li>
+                <!-- placeholder gives the text in the search box -->
+                <div class="searchbox">
+                    <input type="text" name="search" id="search" placeholder="Search on this Website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
